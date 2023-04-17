@@ -1,0 +1,10 @@
+$themes: (
+  light: (
+    color-background: $theme-light-background,
+    color-text: $theme-light-text,
+  ),
+  dark: (
+    color-background: $theme-dark-background,
+    color-text: $theme-dark-text,
+  ),
+);

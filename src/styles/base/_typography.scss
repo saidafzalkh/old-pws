@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  font-size: 16px;
+  @include themify($themes) {
+    color: themed("color-text");
+  }
+}
+
+h1 {
+  font-size: 1.375rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.3rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+
+a,
+.link {
+  @include themify($themes) {
+    color: themed("color-text");
+    fill: themed("color-text");
+  }
+  text-decoration: underline;
+}
+a.underline-none {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.text--big {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.75rem;
+  @media screen and (max-width: 450px) {
+    font-size: 3rem;
+  }
+  line-height: 87.02%;
+  letter-spacing: -0.055em;
+  @include themify($themes) {
+    color: themed("color-text");
+  }
+  text-transform: uppercase;
+}
+
+.text--red {
+  color: $color-external !important;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}

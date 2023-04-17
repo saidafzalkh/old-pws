@@ -1,0 +1,7 @@
+.theme-btn {
+  @include reset-btn();
+  @include themify($themes) {
+    fill: themed("color-text");
+  }
+  @include centrify();
+}

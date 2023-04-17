@@ -1,0 +1,10 @@
+.tag {
+  display: inline-block;
+  @include themify($themes) {
+    background: themed("color-text");
+    color: themed("color-background");
+  }
+  padding: 5px 10px;
+  font-weight: 400;
+  cursor: pointer;
+}

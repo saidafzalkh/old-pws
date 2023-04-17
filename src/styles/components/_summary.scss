@@ -1,0 +1,12 @@
+.summary-text {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  @media screen and (max-width: 768px) {
+    align-self: center;
+  }
+  p {
+    max-width: 600px;
+  }
+}
