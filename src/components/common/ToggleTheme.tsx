@@ -12,7 +12,13 @@ const ToggleTheme = (): ReactElement => {
   };
 
   return (
-    <button className="theme-btn" onClick={handleThemeChange}>
+    <button
+      name="theme-btn"
+      type="button"
+      aria-label={"switch theme to " + theme == "dark" ? "light" : "dark"}
+      className="theme-btn"
+      onClick={handleThemeChange}
+    >
       {theme === "dark" ? <SunFill /> : <MoonStarsFill />}
     </button>
   );

@@ -8,9 +8,9 @@
 // 4. Base stuff
 @import "base/reset", "base/typography";
 // 5. Layouts
-@import "layout/header.scss", "layout/profile";
+@import "layout/header.scss", "layout/profile", "layout/footer";
 // 6. Components
 @import "components/nav.scss", "components/theme-btn", "components/avatar",
-  "components/summary", "components/tag";
+  "components/summary", "components/tag", "components/copyright";
 // 7. Pages
 @import "pages/error", "pages/index";

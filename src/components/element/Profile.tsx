@@ -1,8 +1,8 @@
 import { ReactElement } from "react";
 import { profile } from "../../data/Profile.data";
-import { createTagWrapper } from "../../helper/createTagWrapper";
 import { GeoAltFill } from "react-bootstrap-icons";
-import { createLinkWrapper } from "../../helper/createLinkWrapper";
+import SocialLinks from "../common/SocialLinks";
+import TagsWrapper from "../common/TagsWrapper";
 
 const Profile = (): ReactElement => {
   return (
@@ -15,14 +15,14 @@ const Profile = (): ReactElement => {
         <h1>
           {profile.name.first_name} {profile.name.second_name}
         </h1>
-        {createTagWrapper(profile.tags)}
+        <TagsWrapper tags={profile.tags} />
         <div className="profile__location">
           <GeoAltFill />
           <address>
             {profile.location.country}, {profile.location.city}
           </address>
         </div>
-        {createLinkWrapper(profile.social_links)}
+        <SocialLinks links={profile.social_links} />
       </div>
     </article>
   );

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/LayoutRoot";
 import Index from "./IndexPage";
 import ErrorPage from "./404";
+import Projects from "./ProjectsPage";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/pro",
-        element: <h1>projects?</h1>,
+        element: <Projects />,
       },
     ],
   },
