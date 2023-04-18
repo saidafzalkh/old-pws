@@ -30,6 +30,14 @@ export const projects: PortfolioProject[] = [
         tags: [{title: "react"}, {title: "bootstrap"}],
         source: "https://github.com/saidafzalkh/pomodoro-app",
         view: "https://saidafzalkh.github.io/pomodoro-app/"
+    },
+    {
+        id: 4,
+        cover: {path: covers.website, alt: "Personal Website Cover"},
+        title: "Portfolio Website",
+        description: "You are here now",
+        tags: [{title: "react"}, {title: "sass"}, {title: "typescript"}],
+        source: "https://github.com/saidafzalkh/saidafzal.github.io",
     }
 ]
 export const projects_header: page_header = {
