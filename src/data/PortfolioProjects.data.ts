@@ -1,5 +1,7 @@
 import { covers } from "../assets/project-covers/covers";
+import { page_header } from "../types/PageHeader.type";
 import { PortfolioProject } from "../types/PortfolioProject.type";
+
 
 export const projects: PortfolioProject[] = [
     {
@@ -30,3 +32,8 @@ export const projects: PortfolioProject[] = [
         view: "https://saidafzalkh.github.io/pomodoro-app/"
     }
 ]
+export const projects_header: page_header = {
+    title: "Projects",
+    description: "Here My Portfolio Projects",
+    count: projects.length
+}
