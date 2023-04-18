@@ -11,6 +11,7 @@
 @import "layout/header.scss", "layout/profile", "layout/footer";
 // 6. Components
 @import "components/nav.scss", "components/theme-btn", "components/avatar",
-  "components/summary", "components/tag", "components/copyright";
+  "components/summary", "components/tag", "components/copyright",
+  "components/card";
 // 7. Pages
-@import "pages/error", "pages/index";
+@import "pages/error", "pages/index", "pages/projects";

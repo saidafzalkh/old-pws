@@ -1,13 +1,13 @@
 import { ComponentProps, ReactElement } from "react";
 import Card from "./Card";
+import { projects } from "../../data/PortfolioProjects.data";
 
 const ProjectsWrapper = (): ReactElement => {
   return (
     <div className="projects--wrapper">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {projects.map((e) => (
+        <Card key={e.id} data={e} />
+      ))}
     </div>
   );
 };

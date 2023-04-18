@@ -1,0 +1,35 @@
+.card {
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  background: $theme-light-background;
+  color: $theme-light-text;
+  border-radius: 20px;
+  @include shadow-effect();
+  .tag {
+    background-color: $theme-dark-background;
+    color: $theme-dark-text;
+  }
+  a {
+    color: $theme-light-text;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 8px;
+  }
+  &__description {
+    width: 284px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__footer {
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 20%;
+  }
+}
