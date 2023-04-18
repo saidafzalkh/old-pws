@@ -6,7 +6,7 @@ const Summary = (): ReactElement => {
   return (
     <article className="summary-text" about={summary.about}>
       <Title> {summary.title} </Title>
-      <p> {summary.content} </p>
+      <p dangerouslySetInnerHTML={{ __html: summary.content }}></p>
     </article>
   );
 };

@@ -1,5 +1,5 @@
 export const summary = {
     about: "Saidafzal Kholkhujaev",
     title: "Summary",
-    content: "I am a skilled front-end developer with experience developing web applications using React. I have a passion for creating clean, responsive, and user-friendly interfaces. I am a team player with excellent problem-solving skills. I love learning and keeping up with the latest trends and technologies in web development."
+    content: "Hello there! 👋 </br> I am <b> front end </b> developer who loves minimalistic UI. I learned write code by myself and I really love it. <i> Now I am looking for job where I can keep learning and have good experience.</i> Also I have worked as <b> mentor </b> in learning center, I helped to others learn basics of web programming"
 }

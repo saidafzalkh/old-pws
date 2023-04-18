@@ -34,6 +34,6 @@ export const projects: PortfolioProject[] = [
 ]
 export const projects_header: page_header = {
     title: "Projects",
-    description: "Here My Portfolio Projects",
+    description: "Here some of my works",
     count: projects.length
 }
