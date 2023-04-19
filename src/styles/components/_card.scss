@@ -12,6 +12,13 @@
   }
   a {
     color: $theme-light-text;
+    text-decoration: none;
+    border-bottom: 1px solid $theme-light-text;
+    padding-bottom: 0.3px;
+  }
+  &__header {
+    background-color: #d7e1e9;
+    height: 200px;
   }
   &__content {
     display: flex;
@@ -30,6 +37,6 @@
     display: flex;
     justify-content: flex-end;
     gap: 5px;
-    margin-top: 20%;
+    margin-top: 18%;
   }
 }

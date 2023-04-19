@@ -1,8 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/LayoutRoot";
-import Index from "./IndexPage";
 import ErrorPage from "./404";
-import Projects from "./ProjectsPage";
+import React, { lazy } from "react";
+import LayoutLoading from "../layout/LayoutLoading";
+
+const Index = lazy(() => import("./IndexPage"));
+const Projects = lazy(() => import("./ProjectsPage"));
 
 const router = createBrowserRouter([
   {
@@ -12,11 +15,19 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Index />,
+        element: (
+          <React.Suspense fallback={<LayoutLoading />}>
+            <Index />
+          </React.Suspense>
+        ),
       },
       {
         path: "/pro",
-        element: <Projects />,
+        element: (
+          <React.Suspense fallback={<LayoutLoading />}>
+            <Projects />
+          </React.Suspense>
+        ),
       },
     ],
   },

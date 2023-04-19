@@ -5,7 +5,6 @@ const UL = ({
   clear = false,
   className,
 }: { clear?: boolean } & ComponentProps<"ul">) => {
-  console.log(className);
   return (
     <ul className={clear && className ? className + " ul-clear" : className}>
       {children}

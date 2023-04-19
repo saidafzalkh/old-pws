@@ -8,7 +8,8 @@
 // 4. Base stuff
 @import "base/reset", "base/typography";
 // 5. Layouts
-@import "layout/header.scss", "layout/profile", "layout/footer";
+@import "layout/header.scss", "layout/profile", "layout/footer",
+  "layout/loading";
 // 6. Components
 @import "components/nav.scss", "components/theme-btn", "components/avatar",
   "components/summary", "components/tag", "components/copyright",
