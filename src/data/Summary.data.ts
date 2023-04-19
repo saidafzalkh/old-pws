@@ -1,5 +1,5 @@
 export const summary = {
     about: "Saidafzal Kholkhujaev",
     title: "Summary",
-    content: "Hello there! 👋 </br> I am <b> front end </b> developer who loves minimalistic UI. I learned write code by myself and I really love it. <i> Now I am looking for job where I can keep learning and have good experience.</i> Also I have worked as a <b> mentor </b> in learning center, I helped to others learn basics of web programming"
+    content: "Hello there! 👋 <br /> I am a <b>front-end</b> developer who likes minimalistic UI. I learned how to write code on my own, and I really enjoy it. Now <i>I'm looking for a job where I can continue to learn and get good experience.</i> I've also worked as a <b>mentor</b> at a learning center, helping others learn the basics of web programming."
 }
