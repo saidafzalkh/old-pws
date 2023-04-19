@@ -6,6 +6,7 @@
   color: $theme-light-text;
   border-radius: 20px;
   @include shadow-effect();
+  position: relative;
   .tag {
     background-color: $theme-dark-background;
     color: $theme-dark-text;
@@ -37,6 +38,8 @@
     display: flex;
     justify-content: flex-end;
     gap: 5px;
-    margin-top: 18%;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
   }
 }

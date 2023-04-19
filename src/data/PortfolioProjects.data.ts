@@ -9,7 +9,7 @@ export const projects: PortfolioProject[] = [
         cover: {path: covers.markdown, alt: "Markdown Previewer Cover"},
         title: "Markdown Previewer",
         description: "useful tool for developers with cool UI",
-        tags: [{title: "react"}, {title: "markdown"}],
+        tags: [{title: "React"}, {title: "Markdown"} ],
         source: "https://github.com/saidafzalkh/markdown-previewer",
         view: "https://saidafzalkh.github.io/markdown-previewer/"
     },
@@ -18,7 +18,7 @@ export const projects: PortfolioProject[] = [
         cover: {path: covers.tweet, alt: "Random Quote Machine Cover"},
         title: "Random Quote Machine",
         description: "random quotes which you can tweet",
-        tags: [{title: "jQuery"}, {title: "twitter"}],
+        tags: [{title: "jQuery"}, {title: "Twitter"}, {title: "Bootstrap"}],
         source: "https://github.com/saidafzalkh/random-quote-machine",
         view: "https://saidafzalkh.github.io/random-quote-machine"
     },
@@ -36,7 +36,7 @@ export const projects: PortfolioProject[] = [
         cover: {path: covers.website, alt: "Personal Website Cover"},
         title: "Portfolio Website",
         description: "You are here now",
-        tags: [{title: "react"}, {title: "sass"}, {title: "typescript"}],
+        tags: [{title: "React"}, {title: "Sass"}, {title: "Typescript"}, {title: "React Router V6"}],
         source: "https://github.com/saidafzalkh/saidafzal.github.io",
     }
 ]
