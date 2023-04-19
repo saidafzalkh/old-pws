@@ -4,14 +4,20 @@
     display: flex;
     align-items: center;
     gap: 1px;
-    span {
-      display: inline-block;
-      padding: 2px 6px;
-      background-color: $color-external;
-      border-radius: 50%;
-      font-size: 0.8rem;
-      margin-top: -1rem;
-      font-family: monospace;
-    }
+  }
+  &____top-item {
+    display: inline-block;
+  }
+  &__counter {
+    border-radius: 50%;
+    background-color: $color-external;
+    font-family: monospace;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    margin-top: -1rem;
+  }
+  &__icon,
+  a {
+    color: $color-external;
   }
 }

@@ -3,6 +3,7 @@ import Layout from "../layout/LayoutRoot";
 import ErrorPage from "./404";
 import React, { lazy } from "react";
 import LayoutLoading from "../layout/LayoutLoading";
+import CV from "./CVpage";
 
 const Index = lazy(() => import("./IndexPage"));
 const Projects = lazy(() => import("./ProjectsPage"));
@@ -26,6 +27,14 @@ const router = createBrowserRouter([
         element: (
           <React.Suspense fallback={<LayoutLoading />}>
             <Projects />
+          </React.Suspense>
+        ),
+      },
+      {
+        path: "/cv",
+        element: (
+          <React.Suspense fallback={<LayoutLoading />}>
+            <CV />
           </React.Suspense>
         ),
       },
