@@ -8,7 +8,6 @@ const Avatar = (): ReactElement => {
   return (
     <figure className="avatar--wrapper">
       <Img
-        height={250}
         width={250}
         src={data.path}
         alt={data.alt}
