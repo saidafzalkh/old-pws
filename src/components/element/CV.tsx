@@ -1,82 +1,90 @@
 import { ReactElement } from "react";
+import { CV as data } from "../../data/CV.data";
+import Img from "../common/Image";
 
 const CV = (): ReactElement => {
   return (
-    <article about="Saidafzal Kholkhujaev's CV">
+    <article className="cv" about="Saidafzal Kholkhujaev's CV">
       <header className="cv__header">
-        <h1 title="Name: S">Saidafzal Kholkhujaev</h1>
-        <p title="Job: Web">(Web Developer)</p>
-        <p className="cv__about">
-          A self-taught programmer who is always excited about new experiences
-          and knowledge. Mentor with experience in an individual approach to his
-          business.
-        </p>
-        <ul className="cv__tags-block">
-          <li className="cv__tag">Uzbekistan, Fergana</li>
-          <li className="cv__tag">+998 91 658 58 48</li>
-          <li className="cv__tag">saidafzal1209@gmail.com</li>
+        <h1 title="Name: S">{data.header.name}</h1>
+        <p title="Job: Web">({data.header.job})</p>
+        <p className="cv__about">{data.header.about}</p>
+        <ul className="cv__tags-block ul-clear flex--wrapper">
+          <li className="cv__tag">{data.header.info.address}</li>
+          <li className="cv__tag">
+            <a className="link" href="tel:998916585848">
+              {data.header.info.phone}
+            </a>
+          </li>
+          <li className="cv__tag">
+            <a className="link" href="mailto:saidafzal1209@gmail.com">
+              {data.header.info.email}
+            </a>
+          </li>
         </ul>
       </header>
       <section className="cv__block cv__edu">
-        <h3>Education</h3>
+        <h3 className="cv__block__title">Education</h3>
         <div className="cv__item">
           <div className="cv__item-title">
-            <h3>Osh Technological University</h3>
-            <p>Natural-technical</p>
+            <h3>{data.education.item.title}</h3>
+            <p>{data.education.item.faculty}</p>
           </div>
-          <div className="cv__item-year">2021 - 2026</div>
+          <small className="cv__item-year">{data.education.item.year}</small>
         </div>
       </section>
       <section className="cv__block cv__exp">
-        <h3>Experience </h3>
+        <h3 className="cv__block__title">Experience </h3>
         <div className="cv__item">
           <div className="cv__item-title">
-            <h3>Fantastic Academy</h3>
-            <p>Mentor</p>
+            <h3>{data.experience.item.company}</h3>
+            <p>{data.experience.item.job}</p>
           </div>
-          <div className="cv__item-year">Oct, 2021 - Mar, 2023</div>
+          <small className="cv__item-year">{data.experience.item.year}</small>
         </div>
         <div className="cv__more">
-          <p>
-            "Fantastic Academy" is a <b>training center in Fergana</b>, which
-            started its activity as a design studio in 2017. I worked here as a
-            web programming <b>mentor</b> for more than a
-            <b> year and a half.</b> During this period more than{" "}
-            <i> 30 students finished</i> the course.
-            <b>Key Responsibilities:</b>
-            <ul>
-              <li>I taught skills such as HTML/CSS, JavaScript, and React. </li>
-              <li>Conducted open classes at schools.</li>
-              <li>Participated in administrative work.</li>
-            </ul>
-            Graduated with the goal of working on real-world projects and
-            building a career as a <b>Front-End/Full-Stack</b> developer.
-          </p>
+          <p
+            dangerouslySetInnerHTML={{ __html: data.experience.item.html }}
+          ></p>
         </div>
       </section>
       <section className="cv__block cv__skills">
-        <h3>Skills</h3>
-        <ul className="cv__tags-block">
-          <li className="cv__tag">HTML</li>
-          <li className="cv__tag">CSS</li>
-          <li className="cv__tag">Javascript</li>
+        <h3 className="cv__block__title">Skills</h3>
+        <ul className="cv__tags-block ul-clear flex--wrapper">
+          {data.skills.map((e, i) => (
+            <li key={i} className="cv__tag">
+              {e}
+            </li>
+          ))}
         </ul>
       </section>
       <section className="cv__block cv__lang">
-        <h3>Languages</h3>
-        <ul className="cv__tags-block">
-          <li className="cv__tag">Uzbek (Native)</li>
-          <li className="cv__tag">Russian (C1)</li>
-          <li className="cv__tag">English (B1)</li>
+        <h3 className="cv__block__title">Languages</h3>
+        <ul className="cv__tags-block ul-clear flex--wrapper">
+          {data.languages.map((e, i) => (
+            <li key={i} className="cv__tag">
+              {e}
+            </li>
+          ))}
         </ul>
       </section>
       <section className="cv__block cv__cer">
-        <h3>Certifications</h3>
-        <ul className="cv__tags-block">
-          <li className="cv__tag">Uzbek (Native)</li>
-          <li className="cv__tag">Russian (C1)</li>
-          <li className="cv__tag">English (B1)</li>
-        </ul>
+        <h3 className="cv__block__title">Certifications</h3>
+        <div className="cv__cer-block">
+          {data.certifications.map((e, i) => {
+            return (
+              <div className="cv__cer-items">
+                <h4>{e.title}</h4>
+                <p>{e.name}</p>
+                <figure>
+                  <a className="link" href={e.link}>
+                    <Img src={e.qr} alt={e.link} width={100} />
+                  </a>
+                </figure>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </article>
   );

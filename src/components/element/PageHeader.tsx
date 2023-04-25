@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import { page_header } from "../../types/PageHeader.type";
-import cv_pdf from "../../assets/Saidafzal_Kholkhujaev_CV.pdf";
+import cv_pdf from "../../assets/CV/CV-EN.pdf";
 
 const PageHeder = ({ data }: { data: page_header }): ReactElement => {
   return (
