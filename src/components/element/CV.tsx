@@ -1,6 +1,8 @@
 import { ReactElement } from "react";
 import { CV as data } from "../../data/CV.data";
 import Img from "../common/Image";
+import placeholderImg from "../../assets/project-covers/placeholder.png";
+import errorImg from "../../assets/project-covers/error.png";
 
 const CV = (): ReactElement => {
   return (
@@ -78,7 +80,14 @@ const CV = (): ReactElement => {
                 <p>{e.name}</p>
                 <figure>
                   <a className="link" href={e.link}>
-                    <Img src={e.qr} alt={e.link} width={100} />
+                    <Img
+                      alt={e.link}
+                      src={e.qr}
+                      width={200}
+                      height={200}
+                      placeholderImg={placeholderImg}
+                      errorImg={errorImg}
+                    />
                   </a>
                 </figure>
               </div>
