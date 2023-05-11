@@ -1,1 +1,0 @@
-import{b as e,U as s}from"./index-dbecf208.js";const l=({children:r,title:a})=>e("strong",{title:a,className:"tag",children:r}),c=r=>e(s,{clear:!0,className:"flex--wrapper",children:r.map((a,t)=>e("li",{children:e(l,{title:a.alt,children:a.title})},t))}),p=({tags:r})=>c(r);export{p as T};
